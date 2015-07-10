@@ -76,6 +76,3 @@ execute 'unzip' do
 end
 
 
-node.default['jenkins']['master']['install_method']='package'
-include_recipe 'jenkins::master'
-
