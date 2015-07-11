@@ -6,8 +6,12 @@
       "accept_oracle_download_terms": true
     }
   },
-
+  "jenkins": {
+    "master":{
+      "port":8039
+    }
+  },
   "run_list": [
-    "recipe[java]","recipe[glassfish]","recipe[oraclepri]"
+    "recipe[java]","recipe[glassfish]","recipe[jenkins::master]","recipe[oraclepri]"
   ]
 }
